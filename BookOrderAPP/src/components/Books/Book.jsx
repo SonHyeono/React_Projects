@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Book.module.css'
+import AddBookForm from './AddBookForm'
 
 const Book = (props) => {
   return (
@@ -9,7 +10,9 @@ const Book = (props) => {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{props.price}</div>
       </div>
+      <AddBookForm />
     </li>
+
   )
 }
 

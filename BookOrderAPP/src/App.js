@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/Layout/Header'
 import Main from './components/Layout/Main'
 import Books from './components/Books/Books'
+import Cart from './components/Cart/Cart'
 
 const App = () => {
+
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const openCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const closeCartHandler = () => {
+    setCartIsShown(false);
+  };
+  
   return (
     <>
-      <Header />
+      {cartIsShown && <Cart />}
+      <Header onOpen={openCartHandler}/>
       <Main>
         <Books />
       </Main>
