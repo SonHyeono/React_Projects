@@ -15,14 +15,16 @@ const ModalWindow = (props) => {
 }
 
 const portalElement = document.getElementById('modal-window');
+
 const Modal = (props) => {
 
-  return(
+  return (
     <>
-      ReactDOM.createPortal(<Background />, portalElement)
-      ReactDOM.createPortal(<ModalWindow>{props.children}</ModalWindow>, portalElement)
+      {ReactDOM.createPortal(<Background onClose={props.onClose}/>, portalElement)}
+      {ReactDOM.createPortal(<ModalWindow>{props.children}</ModalWindow>, portalElement)}
     </>
   )
 }
+
 
 export default Modal

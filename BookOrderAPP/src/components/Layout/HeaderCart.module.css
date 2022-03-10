@@ -1,6 +1,6 @@
 .button {
     cursor: pointer;
-
+    
     border: none;
     background-color: #3c6382;
     color: white;
@@ -12,11 +12,11 @@
     font-weight: bold;
 }
 
-.button:hover{
+.button:hover {
     background-color: #60a3bc;
 }
 
-.icon{
+.icon {
     width: 1.35rem;
     height: 1.35rem;
     margin-right: 0.5rem;

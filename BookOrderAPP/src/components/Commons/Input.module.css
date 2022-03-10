@@ -1,9 +1,7 @@
 .input {
-    /* border: 2px dashed springgreen; */
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-
 }
 
 .input label {

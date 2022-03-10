@@ -1,12 +1,8 @@
-import React from "react";
-import BooksList from "./BooksList";
+import React from 'react'
+import BooksList from './BooksList'
 
 const Books = () => {
-  return (
-    <>
-      <BooksList />
-    </>
-  );
-};
+  return <BooksList />
+}
 
-export default Books;
+export default Books
